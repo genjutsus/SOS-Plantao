@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <form id="form1">
                 <label for="input1">Nome do Hospital/Órgão solicitante:</label>
                 <input type="text" id="input1" name="input1" required><br>
+                <label for="input2">Nome do Hospital/Órgão solicitante:</label>
+                <input type="text" id="input2" name="input2" required><br>
+                <label for="input3">Nome do Hospital/Órgão solicitante:</label>
+                <input type="text" id="input3" name="input3" required><br>
                 <!-- Adicione os outros campos conforme necessário -->
                 <input type="submit" value="Enviar">
             </form>
@@ -34,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resultTemplates = {
         form1: {
-            text: '{input1}, através do funcionário {input2}, CPF {input3}, comunica o falecimento e solicitação a remoção de: {input4}.',
+            text: '{input1}, através do funcionário {input2}, {input1} CPF {input3}, comunica {input2} o falecimento e solicitação{input2} a remoção de: {input4}.',
             instructions: 'Observações para o Formulário 1.'
         },
         form2: {

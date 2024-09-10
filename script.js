@@ -66,6 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 <label for="input19">Data da Morte:</label>
                 <input type="number" id="input19" name="input19" required><br>
                 
+                <label for="input20">Horário da Morte:</label>
+                <input type="number" id="input20" name="input20" required><br>
+                
+                <label for="input21">Nome do Médico que atestou a Morte:</label>
+                <input type="number" id="input21" name="input21" required><br>
+                
+                <label for="input22">CRM do Médico que atestou a Morte:</label>
+                <input type="number" id="input22" name="input22" required><br>
+                
+                <label for="input23">Número da Guia:</label>
+                <input type="number" id="input23" name="input23" required><br>
+                
+                <label for="input24">Nome de quem identificou o Falecido:</label>
+                <input type="number" id="input24" name="input24" required><br>
+                
+                <label for="input25">Parentesco entre quem identificou e o Falecido:</label>
+                <input type="number" id="input25" name="input25" required><br>
+                
                 <input type="submit" value="Enviar">
             </form>
         `,

@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resultTemplates = {
         form1: {
-            text: '{input1}, através do funcionário {input2}, CPF {input3}, comunica o falecimento e solicitação a remoção de: {input4}, {input5}, natural do {input6}, {input7}, nascido em {input8}, identidade {input9}, com residência na {input10}. O falecido deu entrada no {input1} no dia {input11} às {input12} e foi gerado o número do BAM {input13), prontuário {input14}. A morte, em tese, foi devido a {input15}, no local {input16}. O falecido deu entrada inicialmente no {input17}, através de {input18}. {input4} veio a óbito no dia {input19} às {input20}, atestado pelo médico {input21}, CRM {input22}. Guia {input23}. O cadáver foi identificado por {input24}, {input25} da vítima. Nome: {input1}\nIdade: {input2}',
+            text: '{input1}, através do funcionário {input2}, CPF {input3}, comunica o falecimento e solicitação a remoção de: {input4}, {input5}, natural do {input6}, {input7}, nascido em {input8}, identidade {input9}, com residência na {input10}. O falecido deu entrada no {input1} no dia {input11} às {input12} e foi gerado o número do BAM {input13}, prontuário {input14}. A morte, em tese, foi devido a {input15}, no local {input16}. O falecido deu entrada inicialmente no {input17}, através de {input18}. {input4} veio a óbito no dia {input19} às {input20}, atestado pelo médico {input21}, CRM {input22}. Guia {input23}. O cadáver foi identificado por {input24}, {input25} da vítima. Nome: {input1}\nIdade: {input2}',
             instructions: 'Observações para o Formulário 1.'
         },
         form2: {

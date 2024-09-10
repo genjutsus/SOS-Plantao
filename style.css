@@ -3,10 +3,6 @@ body {
     margin: 0px!important;
 }
 
-h1 {
-    font-size: 24px;
-}
-
 label {
     display: block;
     margin-top: 10px;
@@ -34,6 +30,7 @@ button:hover {
 }
 h1 {
     margin: 0px;
+    font-size: 24px;
 }
 
 .headersos {

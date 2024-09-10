@@ -157,8 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
             result = result.replace(regex, value); // Substitui todas as ocorrências
         }
 
-        resultText.textContent = result;
-        instructions.textContent = resultInstructions;
+        resultText.innerHTML = result;
+        instructions.innerHTML = resultInstructions;
         resultContainer.style.display = 'block';
     }
 });

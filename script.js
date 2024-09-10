@@ -127,38 +127,47 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     optionsSelect.addEventListener('change', (event) => {
-        const formId = event.target.value;
-        formContainer.innerHTML = forms[formId] || '';
-        
-        if (forms[formId]) {
-            const form = document.getElementById(formId);
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const formData = new FormData(form);
-                const data = {};
-                formData.forEach((value, key) => {
-                    data[key] = value;
-                });
+    const formId = event.target.value;
+    formContainer.innerHTML = forms[formId] || '';
 
-                let resultTextTemplate = '';
-                let resultInstructions = '';
+    if (forms[formId]) {
+        const form = document.getElementById(formId);
 
-                if (resultTemplates[formId]) {
-                    resultTextTemplate = resultTemplates[formId].text;
-                    resultInstructions = resultTemplates[formId].instructions;
-                }
+        // Remova o ouvinte de evento anterior se existir
+        form.removeEventListener('submit', formSubmitHandler);
 
-                let result = resultTextTemplate;
-                for (const [key, value] of Object.entries(data)) {
-                    result = result.replace(`{${key}}`, value);
-                }
-
-                resultText.textContent = result;
-                instructions.textContent = resultInstructions;
-                resultContainer.style.display = 'block';
+        // Defina um novo ouvinte de evento de submit
+        const formSubmitHandler = (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
             });
-        } else {
-            resultContainer.style.display = 'none';
-        }
-    });
+
+            let resultTextTemplate = '';
+            let resultInstructions = '';
+
+            if (resultTemplates[formId]) {
+                resultTextTemplate = resultTemplates[formId].text;
+                resultInstructions = resultTemplates[formId].instructions;
+            }
+
+            let result = resultTextTemplate;
+            for (const [key, value] of Object.entries(data)) {
+                const regex = new RegExp(`{${key}}`, 'g'); // Cria a expressão regular global
+                result = result.replace(regex, value); // Substitui todas as ocorrências
+            }
+
+            resultText.textContent = result;
+            instructions.textContent = resultInstructions;
+            resultContainer.style.display = 'block';
+        };
+
+        form.addEventListener('submit', formSubmitHandler);
+    } else {
+        resultContainer.style.display = 'none';
+    }
+});
+
 });

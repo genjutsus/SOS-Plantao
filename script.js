@@ -88,9 +88,51 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         form2: `
             <form id="form2">
-                <label for="input26">Email:</label>
-                <input type="email" id="input26" name="input26" required><br>
-                <!-- Adicione os outros campos conforme necessário -->
+                <label for="2nome">Nome da vítima-comunicante:</label>
+                <input type="text" id="2nome" name="2nome" required><br>
+
+                <label for="2data">Data do crime:</label>
+                <input type="text" id="2data" name="2data" required><br>
+
+                <label for="2hora">Hora do crime:</label>
+                <input type="text" id="2hora" name="2hora" required><br>
+
+                <label for="2local">Local do crime:</label>
+                <input type="text" id="2local" name="2local" required><br>
+
+                <label for="2meio">Meio de locomoção do criminoso:</label>
+                <select id="2meio" name="2meio" required>
+                <option value="a pé">A pé</option>
+                <option value="bicicleta">Bicicleta</option>
+                <option value="bicicleta elétrica">Bicicleta Elétrica</option>
+                <option value="de motocicleta">Moto</option>
+                <option value="de carro">Carro</option>
+            </select><br>
+
+                <label for="2fazendo">O que a vítima estava fazendo na hora do arrebatamento?</label>
+                <input type="text" id="2fazendo" name="2fazendo" required><br>
+
+                <label for="2acompanhado">O criminoso estava sozinho ou acompanhado?</label>
+                <input type="text" id="2acompanhado" name="2acompanhado" required><br>
+
+                <label for="2evadiu">O criminoso evadiu-se em direção a...</label>
+                <input type="text" id="2evadiu" name="2evadiu" required><br>
+
+                <label for="2descricao">Descrição do criminoso:</label>
+                <input type="text" id="2descricao" name="2descricao" required><br>
+
+                <label for="2imei">IMEI do celular subtraído:</label>
+                <input type="text" id="2imei" name="2imei" required><br>
+
+                <label for="2modelo">Modelo do celular subtraído:</label>
+                <input type="text" id="2modelo" name="2modelo" required><br>
+
+                <label for="2testemunhas">Testemunharam o fato:</label>
+                <input type="text" id="2testemunhas" name="2testemunhas" required><br>
+
+                <label for="2probabilidade">É provável, improvável ou impossível que haja imagens de câmera?</label>
+                <input type="text" id="2probabilidade" name="2probabilidade" required><br>
+                
                 <input type="submit" value="Enviar">
             </form>
         `,
@@ -110,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
             instructions: '_____________ <br> <br> <strong>Observações:</strong> <br> 1. O crime é "Verificação para Remoção de Óbito". A vítima é o falecido. O georreferenciamento do local do fato é o local do motivo da morte. <br> 2. Após o R.O e o Termo de Declaração, gere a peça "Guia de Remoção de Cadáver" <br> 3. Por fim, ligue para o número (21) 8596-9532 para acionar a remoção.'
         },
         form2: {
-            text: 'Email: {input26}\nTelefone: {input27}',
-            instructions: 'Observações para o Formulário 2.'
+            text: '<strong> DINÂMICA DO FATO </strong> <br> <br> Narra o comunicante-vítima, {2nome}, que no dia {2data}, hora {2hora}, estava no local {2local}, {2fazendo}, quando surgiu um indivíduo, {2acompanhado}, que estava {2meio}, e arrebatou o seu celular ({2modelo}, IMEI nº {2imei}) de suas mãos, evadindo-se logo após em direção a {2evadiu}. As características lembradas do indivíduo que arrebatou o celular eram: {2descricao}. O fato foi testemunhado por {2testemunhas}. O comunicante afirma que é {2probabilidade} que haja imagens de câmera sobre o ocorrido. <br> <br> <strong> TERMO DE DECLARAÇÃO </strong> <br> <br> QUE no dia {2data}, hora {2hora}, estava no local {2local}, {2fazendo}, quando surgiu um indivíduo, {2acompanhado}, que estava {2meio}, e arrebatou o seu celular ({2modelo}, IMEI nº {2imei}) de suas mãos, evadindo-se logo após em direção a {2evadiu}; QUE as características lembradas do indivíduo que arrebatou o celular eram: {2descricao}; QUE o fato foi testemunhado por {2testemunhas}; QUE é {2probabilidade} que haja imagens de câmera sobre o ocorrido. E mais não disse.',
+            instructions: '_____________ <br> <br> <strong>Observações:</strong> <br> 1. Se foi mais de uma pessoa envolvida na ação criminosa, tipifique como Artigo 155, § 4º, IV, do Código Penal'
         },
         form3: {
             text: 'Endereço: {input28}\nCidade: {input29}',

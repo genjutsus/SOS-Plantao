@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <label for="2meio">Meio de locomoção do criminoso:</label>
                 <select id="2meio" name="2meio" required>
                 <option value="a pé">A pé</option>
-                <option value="bicicleta">Bicicleta</option>
-                <option value="bicicleta elétrica">Bicicleta Elétrica</option>
-                <option value="de motocicleta">Moto</option>
-                <option value="de carro">Carro</option>
+                <option value="se locomovendo com bicicleta">Bicicleta</option>
+                <option value="se locomovendo com bicicleta elétrica">Bicicleta Elétrica</option>
+                <option value="se locomovendo com motocicleta">Moto</option>
+                <option value="se locomovendo com carro">Carro</option>
             </select><br>
 
                 <label for="2fazendo">O que a vítima estava fazendo na hora do arrebatamento?</label>

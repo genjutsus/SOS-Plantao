@@ -138,8 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         form3: `
             <form id="form3">
-                <label for="input28">Endereço:</label>
-                <input type="text" id="input28" name="input28" required><br>
+                <label for="3nomedopreso">Nome do Preso em Flagrante:</label>
+                <input type="text" id="3nomedopreso" name="3nomedopreso" required><br>
+                
                 <!-- Adicione os outros campos conforme necessário -->
                 <input type="submit" value="Enviar">
             </form>
@@ -156,8 +157,12 @@ document.addEventListener('DOMContentLoaded', () => {
             instructions: '_____________ <br> <br> <strong>Observações:</strong> <br> 1. Se foi mais de uma pessoa envolvida na ação criminosa, tipifique como Artigo 155, § 4º, IV, do Código Penal'
         },
         form3: {
-            text: 'Endereço: {input28}\nCidade: {input29}',
-            instructions: 'Observações para o Formulário 3.'
+            text: 'Ilustre Sr. Diretor da SEAP,
+<br>
+<br>Encaminho o nacional {3nomedopreso}, detido pelo crime conforme este procedimento, para acautelamento em unidade prisional e posterior apresentação à Audiência de Custódia no primeiro dia útil seguinte.
+<br>
+<br>Cordialmente,',
+            instructions: 'Para menor de idade, selecione no SOS Plantão a opção de CI de Encaminhamento de Menor Apreendido'
         }
     };
 

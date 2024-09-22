@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         form3: {
             text: 'Ilustre Sr. Diretor da SEAP,<br><br>Encaminho o nacional {3nomedopreso}, detido pelo crime conforme este procedimento, para acautelamento em unidade prisional e posterior apresentação à Audiência de Custódia no primeiro dia útil seguinte.<br><br>Cordialmente,',
-            instructions: 'Para menor de idade, selecione no SOS Plantão a opção de CI de Encaminhamento de Menor Apreendido'
+            instructions: '<strong>____________</strong><br>Para menor de idade, selecione no SOS Plantão a opção de CI de Encaminhamento de Menor Apreendido'
         }
     };
 

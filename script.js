@@ -157,11 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
             instructions: '_____________ <br> <br> <strong>Observações:</strong> <br> 1. Se foi mais de uma pessoa envolvida na ação criminosa, tipifique como Artigo 155, § 4º, IV, do Código Penal'
         },
         form3: {
-            text: 'Ilustre Sr. Diretor da SEAP,
-<br>
-<br>Encaminho o nacional {3nomedopreso}, detido pelo crime conforme este procedimento, para acautelamento em unidade prisional e posterior apresentação à Audiência de Custódia no primeiro dia útil seguinte.
-<br>
-<br>Cordialmente,',
+            text: 'Ilustre Sr. Diretor da SEAP,<br><br>Encaminho o nacional {3nomedopreso}, detido pelo crime conforme este procedimento, para acautelamento em unidade prisional e posterior apresentação à Audiência de Custódia no primeiro dia útil seguinte.<br><br>Cordialmente,',
             instructions: 'Para menor de idade, selecione no SOS Plantão a opção de CI de Encaminhamento de Menor Apreendido'
         }
     };

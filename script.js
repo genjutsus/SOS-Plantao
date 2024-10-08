@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const forms = {
         form1: `
-            <form id="form1">
+            <span color="red"><strong>REITERE QUE TODAS AS INFORMAÇÕES SÃO IMPORTANTES. CASO HAJA IMPOSSIBILIDADE DE ARRECADAR ALGUMA DAS INFORMAÇÕES ABAIXO, DIGITE desconhecido E <u>REVISE OS RESULTADOS APÓS CLICAR EM ENVIAR</u></strong></span><br><form id="form1">
                 <label for="input1">Nome do Hospital/Órgão solicitante:</label>
                 <input type="text" id="input1" name="input1" placeholder="Hospital Municipal Miguel Couto" required><br>
                 

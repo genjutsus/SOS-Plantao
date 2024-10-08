@@ -9,79 +9,79 @@ document.addEventListener('DOMContentLoaded', () => {
         form1: `
             <form id="form1">
                 <label for="input1">Nome do Hospital/Órgão solicitante:</label>
-                <input type="text" id="input1" name="input1" required><br>
+                <input type="text" id="input1" name="input1" placeholder="Hospital Municipal Miguel Couto" required><br>
                 
                 <label for="input2">Nome do Funcionário comunicante:</label>
-                <input type="text" id="input2" name="input2" required><br>
+                <input type="text" id="input2" name="input2" placeholder="FULANA CICLANA DE TAL" required><br>
                 
                 <label for="input3">CPF do Funcionário:</label>
-                <input type="text" id="input3" name="input3" required><br>
+                <input type="text" id="input3" name="input3" placeholder="000.000.000-00" required><br>
                 
                 <label for="input4">Nome do Falecido:</label>
-                <input type="text" id="input4" name="input4" required><br>
+                <input type="text" id="input4" name="input4" placeholder="BELTRANO DE TAL" required><br>
                 
                 <label for="input5">Nacionalidade do Falecido:</label>
-                <input type="text" id="input5" name="input5" required><br>
+                <input type="text" id="input5" name="input5" placeholder="brasileiro" required><br>
                 
                 <label for="input6">Falecido é natural de qual cidade?</label>
-                <input type="text" id="input6" name="input6" required><br>
+                <input type="text" id="input6" name="input6" placeholder="Duque de Caxias" required><br>
                 
                 <label for="input7">Estado Civil do Falecido:</label>
-                <input type="text" id="input7" name="input7" required><br>
+                <input type="text" id="input7" name="input7" placeholder="solteiro" required><br>
                 
                 <label for="input8">Data do Nascimento do Falecido:</label>
-                <input type="text" id="input8" name="input8" required><br>
+                <input type="text" id="input8" name="input8" placeholder="00/00/0000" required><br>
                 
                 <label for="input9">Identidade (nº do doc/órgão) do Falecido:</label>
-                <input type="text" id="input9" name="input9" required><br>
+                <input type="text" id="input9" name="input9" placeholder="000000000/DETRAN-RJ" required><br>
                 
                 <label for="input10">Endereço do Falecido:</label>
-                <input type="text" id="input10" name="input10" required><br>
+                <input type="text" id="input10" name="input10" placeholder="Rua das Couves, 01, Taquara, Rio de Janeiro - RJ" required><br>
                 
                 <label for="input11">Data de Entrada no Hospital/Órgão solicitante:</label>
-                <input type="text" id="input11" name="input11" required><br>
+                <input type="text" id="input11" name="input11" placeholder="00/00/0000" required><br>
                 
                 <label for="input12">Hora de Entrada no Hospital/Órgão solicitante:</label>
-                <input type="text" id="input12" name="input12" required><br>
+                <input type="text" id="input12" name="input12" placeholder="00h00" required><br>
                 
                 <label for="input13">Número do BAM:</label>
-                <input type="text" id="input13" name="input13" required><br>
+                <input type="text" id="input13" name="input13" placeholder="000000" required><br>
                 
                 <label for="input14">Número do Prontuário:</label>
-                <input type="text" id="input14" name="input14" required><br>
+                <input type="text" id="input14" name="input14" placeholder="000000" required><br>
                 
                 <label for="input15">Motivo da Morte (em tese):</label>
-                <input type="text" id="input15" name="input15" required><br>
+                <input type="text" id="input15" name="input15" placeholder="queda da própria altura" required><br>
                 
                 <label for="input16">Local do Motivo da Morte:</label>
-                <input type="text" id="input16" name="input16" required><br>
+                <input type="text" id="input16" name="input16" placeholder="Rua das Couves, 01, Taquara, Rio de Janeiro - RJ" required><br>
                 
                 <label for="input17">Primeiro Hospital/Órgão em que o falecido deu entrada:</label>
-                <input type="text" id="input17" name="input17" required><br>
+                <input type="text" id="input17" name="input17" placeholder="Hospital Municipal Miguel Couto" required><br>
                 
                 <label for="input18">Socorrido por? ("Meios próprios" ou "Nome, Documento (pessoa física)" ou "Ambulância, Identificação da Ambulância"</label>
-                <input type="text" id="input18" name="input18" required><br>
+                <input type="text" id="input18" name="input18" placeholder="Ambulância SAMU, RT 103" required><br>
                 
                 <label for="input19">Data da Morte:</label>
-                <input type="text" id="input19" name="input19" required><br>
+                <input type="text" id="input19" name="input19" placeholder="00/00/2020" required><br>
                 
                 <label for="input20">Horário da Morte:</label>
-                <input type="text" id="input20" name="input20" required><br>
+                <input type="text" id="input20" name="input20" placeholder="00h00" required><br>
                 
                 <label for="input21">Nome do Médico que atestou a Morte:</label>
-                <input type="text" id="input21" name="input21" required><br>
+                <input type="text" id="input21" name="input21" placeholder="JUCLANO DE TAL" required><br>
                 
                 <label for="input22">CRM do Médico que atestou a Morte:</label>
-                <input type="text" id="input22" name="input22" required><br>
+                <input type="text" id="input22" name="input22" placeholder="00-00000-0" required><br>
                 
                 <label for="input23">Número da Guia:</label>
-                <input type="text" id="input23" name="input23" required><br>
+                <input type="text" id="input23" name="input23" placeholder="0000000" required><br>
                 
                 <label for="input24">Nome de quem identificou o Falecido:</label>
-                <input type="text" id="input24" name="input24" required><br>
+                <input type="text" id="input24" name="input24"  placeholder="ZUCLANO DE TAL" required><br>
                 
-                <label for="input25">Parentesco entre quem identificou e o Falecido:</label>
-                <input type="text" id="input25" name="input25" required><br>
+                <label for="input25">Parentesco entre quem identificou e o Falecido (é o que da vítima?):</label>
+                <input type="text" id="input25" name="input25" placeholder="irmão" required><br>
                 
                 <input type="submit" value="Enviar">
             </form>

@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.O.S Plantão v0.1.0 (BETA)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="headersos"><h1>S.O.S Plantão v0.1.0 (BETA)</h1></div>
-    <div class="principalsos">
-    <label for="options">Escolha o tipo de ocorrência a ser gerado:</label>
-    <select id="options">
-        <option value="">Selecione uma opção</option>
-        <option value="form1">Guia de Remoção de Cadáver</option>
-        <option value="form4">Estelionato - Transferência Pix/TED/DOC/QRCode</option>
-        <option value="form2">Em construção</option>
-        <option value="form3">Em breve</option>
-    </select>
+    <header class="headersos">
+        <h1>S.O.S Plantão v0.1.0 (BETA)</h1>
+    </header>
 
-    <div id="form-container"></div>
+    <main class="container">
+        <div class="card">
+            <label for="options">Escolha o tipo de ocorrência a ser gerado:</label>
+            <select id="options">
+                <option value="">Selecione uma opção</option>
+                <option value="form1">Guia de Remoção de Cadáver</option>
+                <option value="form4">Estelionato - Transferência Pix/TED/DOC/QRCode</option>
+                <option value="form2">Em construção</option>
+                <option value="form3">Em breve</option>
+            </select>
 
-    <div id="result-container" style="display:none;">
-        <h2>Resultado</h2>
-        <span id="result-text"></span>
-        <p id="instructions"></p>
-    </div>
-    </div>
+            <div id="form-container"></div>
+
+            <div id="result-container" style="display:none;">
+                <h2>Resultado</h2>
+                <span id="result-text"></span>
+                <p id="instructions"></p>
+            </div>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>

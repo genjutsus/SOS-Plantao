@@ -25,6 +25,10 @@
   </section>
 
   <main class="principalsos">
+    <div id="mensagem-inicial" style="margin-bottom: 20px; padding: 15px; border: 1px solid #d1d5db; background-color: #f9f9f9; border-radius: 8px;">
+  <p><strong>Bem-vindo ao sistema S.O.S Plantão.</strong><br>
+  Por favor, selecione o tipo de ocorrência acima para começar.</p>
+</div>
     <div id="form-container"></div>
 
     <div id="result-container" style="display:none;">
@@ -35,5 +39,15 @@
   </main>
 
   <script src="script.js"></script>
-</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('options');
+    const mensagemInicial = document.getElementById('mensagem-inicial');
+    if (select && mensagemInicial) {
+      select.addEventListener('change', () => {
+        mensagemInicial.style.display = 'none';
+      });
+    }
+  });
+</script></body>
 </html>

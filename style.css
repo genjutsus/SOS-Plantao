@@ -1,69 +1,82 @@
+/* Base */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0px!important;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #1a1a1a;
 }
 
+/* Header */
+.headersos {
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.headersos h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário */
 label {
+    font-weight: 700;
+    margin-bottom: 10px;
     display: block;
-    margin-top: 10px;
+    font-size: 18px;
 }
 
-input, select, button {
-    margin-top: 5px;
-    padding: 5px;
-}
-
-input[type="submit"] {
-    font-size: 32px;
-    border: 5px solid #2d2d2d;
-    background-color: #facf35;
-    margin-bottom: 10px!important;
-    margin-top: 10px;
-    color: black;
+select, input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
     border-radius: 6px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-button {
-    margin-top: 15px;
-    background-color: #4CAF50;
+/* Botões */
+button, input[type="submit"] {
+    background-color: #2b6cb0;
     color: white;
     border: none;
+    margin-top: 20px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+button:hover, input[type="submit"]:hover {
+    background-color: #245a91;
+    transform: scale(1.03);
 }
 
-#form-container {
+/* Resultados */
+#result-container {
     margin-top: 20px;
 }
-h1 {
-    margin: 0px;
-    font-size: 24px;
-}
 
-.headersos {
-    background-color: black;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.principalsos {
-    margin-left: 20px;
-}
-
-label[for="options"] {
-    text-align: center;
-    font-size: 21px;
-    font-weight: 700!important;
-}
-select#options {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+#result-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
